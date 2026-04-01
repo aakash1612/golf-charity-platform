@@ -1,0 +1,42 @@
+.admin-layout {
+  display: flex; min-height: 100vh;
+}
+.admin-sidebar {
+  width: 220px; flex-shrink: 0;
+  background: var(--primary); padding: 24px 16px;
+  display: flex; flex-direction: column;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+}
+.admin-logo {
+  display: flex; align-items: center; gap: 8px;
+  color: #fff; font-weight: 800; font-size: 0.95rem;
+  padding: 0 8px 24px; border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 16px;
+}
+.admin-nav { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.admin-nav-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; border-radius: 8px;
+  color: rgba(255,255,255,0.6); font-size: 0.9rem; font-weight: 500;
+  text-decoration: none; transition: all 0.15s;
+  background: none; border: none; cursor: pointer; width: 100%;
+}
+.admin-nav-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
+.admin-nav-item.active { background: rgba(0,212,170,0.15); color: var(--accent); }
+.admin-logout { margin-top: auto; color: rgba(255,255,255,0.4) !important; }
+.admin-logout:hover { color: var(--danger) !important; background: rgba(231,76,60,0.1) !important; }
+
+.admin-main {
+  flex: 1; padding: 36px; background: var(--bg);
+  min-height: 100vh; overflow-y: auto;
+}
+.admin-page-header { margin-bottom: 28px; }
+.admin-page-header h1 { font-size: 1.5rem; font-weight: 800; margin-bottom: 4px; }
+.admin-page-header p { color: var(--text-muted); font-size: 0.875rem; }
+
+@media (max-width: 768px) {
+  .admin-layout { flex-direction: column; }
+  .admin-sidebar { width: 100%; height: auto; position: static; flex-direction: row; flex-wrap: wrap; padding: 12px; }
+  .admin-nav { flex-direction: row; flex-wrap: wrap; }
+  .admin-main { padding: 20px 16px; }
+}

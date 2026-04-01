@@ -1,0 +1,1 @@
+export { CharityDetailPage as default } from './CharitiesPage';
