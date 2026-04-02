@@ -1,6 +1,6 @@
 # GolfGives — Golf Charity Subscription Platform
 
-##  Project Link : https://golfcharit.netlify.app/
+##  Project Link : https://golf-charity-platform-gamma-hazel.vercel.app
 
 ## Features
 
